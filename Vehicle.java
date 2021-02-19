@@ -1,6 +1,6 @@
 package com.bae.garage;
 
-public class Vehicle {
+abstract class Vehicle {
 
 	private int ID;
 	private String model;
@@ -31,6 +31,10 @@ public class Vehicle {
 
 	public void horn() {
 		System.out.println("Honk");
+	}
+
+	public String getType() {
+		return this.getClass().getName();
 	}
 
 }
